@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f8fc;
+    color: #222;
+}
+
+/* Header */
+header {
+    background: #0b5ed7;
+    color: white;
+    padding: 15px 7%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #cce3ff;
+}
+
+/* Hero */
+.hero {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #0b5ed7,
+        #6ea8fe
+    );
+
+    color: white;
+}
+
+.hero h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+button {
+    background: #ffca2c;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ffc107;
+}
+
+/* Sections */
+section {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+    color: #0b5ed7;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #0b5ed7;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+/* Benefits */
+.benefits {
+    background: #e9f2ff;
+}
+
+.benefit-list {
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.benefit-list p {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Form */
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+form button {
+    margin-top: 5px;
+    background: #0b5ed7;
+    color: white;
+}
+
+#result {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #082f6b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .benefit-list {
+        grid-template-columns: 1fr;
+    }
+}

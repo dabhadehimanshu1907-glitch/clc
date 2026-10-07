@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>☁ Cloud Computing</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div>
+            <h2>Welcome to Cloud Computing</h2>
+            <p>
+                Access computing resources, storage, applications,
+                and services over the Internet.
+            </p>
+            <button onclick="learnMore()">Learn More</button>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Cloud Services</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>☁ IaaS</h3>
+                <p>
+                    Infrastructure as a Service provides virtual
+                    machines, storage, and networking.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>⚙ PaaS</h3>
+                <p>
+                    Platform as a Service provides tools and
+                    platforms for application development.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>💻 SaaS</h3>
+                <p>
+                    Software as a Service allows users to access
+                    software applications through the Internet.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="benefits">
+        <h2>Benefits of Cloud Computing</h2>
+
+        <div class="benefit-list">
+            <p>✓ Cost-effective</p>
+            <p>✓ Easy scalability</p>
+            <p>✓ Access from anywhere</p>
+            <p>✓ Data backup and recovery</p>
+            <p>✓ High availability</p>
+            <p>✓ Flexible resources</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <form onsubmit="submitForm(event)">
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <textarea id="message" placeholder="Enter your message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="result"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Cloud Computing Web Application</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
